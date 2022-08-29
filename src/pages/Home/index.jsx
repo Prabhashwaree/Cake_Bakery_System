@@ -18,10 +18,13 @@ import Button from '@mui/material/Button';
 
 import cake1 from '../../assets/img/cake1.jpg';
 import cake2 from '../../assets/img/cake2.jpg';
-// import cake3 from '../../assets/img/cake3.jpg';
-// import cake4 from '../../assets/img/cake4.jpg';
-// import cake5 from '../../assets/img/cake5.jpg';
-// import cake6 from '../../assets/img/cake6.jpg';
+import cake3 from '../../assets/img/cake3.jpg';
+import cake4 from '../../assets/img/cake4.jpg';
+import cake5 from '../../assets/img/cake5.jpg';
+import cake6 from '../../assets/img/cake6.webp';
+
+import $ from 'jquery';
+
 
 
 
@@ -43,7 +46,24 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+$(document).on('click', '.cakeCatogary-filter li', function () {
+  $(this).addClass('cakeCatogary-filter-active').siblings().removeClass('cakeCatogary-filter-active')
+})
+
+$(document).ready(function(){
+  $('.list').click(function(){
+      const val =$(this).attr('data-filter');
+      if(val =='all'){
+          $('.cake-box').show('1000');
+      }else{
+          $('.cake-box').not('.'+val).hide('1000');
+          $('.cake-box').filter('.'+val).show('1000');                    
+      }
+  })
+})
+
 export default function HomePage() {
+ 
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -116,40 +136,42 @@ export default function HomePage() {
 
             {/* <!-- 1 (all)--> */}
             <a href="" class="cake-box app">
-              <img src={cake1 } alt="" />
+              <img src={cake1} alt="" />
 
             </a>
 
             {/* <!-- 2 (app)--> */}
             <a href="" class="cake-box web">
-              <img src={ cake2} alt="" />
+              <img src={cake2} alt="" />
 
             </a>
 
             {/* <!-- 3 (desing)--> */}
             <a href="" class="cake-box ai">
-              {/* <img src={ } alt="" /> */}
+              <img src={cake3} alt="" />
 
             </a>
 
             {/* <!-- 4 (web)--> */}
             <a href="" class="cake-box desing">
-              {/* <img src={ } alt="" /> */}
+              <img src={cake4} alt="" />
 
             </a>
 
             {/* <!-- 5 (ai)--> */}
             <a href="" class="cake-box desing">
-              {/* <img src={ } alt="" /> */}
+              <img src={cake5} alt="" />
 
             </a>
 
             {/* <!-- 6 --> */}
             <a href="" class="cake-box app">
-              {/* <img src={ } alt="" /> */}
+              <img src={cake6} alt="" />
 
             </a>
 
+
+           
 
           </div>
 
@@ -158,6 +180,7 @@ export default function HomePage() {
 
 
 
+     
     </>
   );
 }

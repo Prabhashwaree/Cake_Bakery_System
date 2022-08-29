@@ -100,9 +100,12 @@ ul{
 .cake-box{
     width: 234px;
     padding: 15px;
-    border: 1px solid #070606;
+    border: 1px solid #e0dfdf;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 20px;
     height: 40%;
+    /* background-color: #e2e2e2; */
 
 }
 
