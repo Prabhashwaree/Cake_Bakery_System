@@ -3,12 +3,112 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
 
 .appBar{
     background-color: #eaeaea;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px; */
     
 }
 .delicious{
     font-family: 'Birthstone Bounce', cursive;
     font-weight: 5;
+}
+
+
+/* ---------------second Page---------------- */
+.secondPage{
+    position: absolute;
+    top: 100%;
+    border: 1px solid red;
+    width: 100%;
+    height: 97vh;
+}
+
+.cakeDiscription{
+    position: absolute;
+    border: 1px solid rgb(0, 47, 255);
+    width: 30%;
+    height: 97vh;
+}
+
+.cakeSection{
+    position: absolute;
+    border: 1px solid rgb(34, 236, 135);
+    width: 70%;
+    height: 97vh;
+    right:0;
+}
+
+.cakeDiscriptionRectangle{
+    position: absolute;
+    border: 1px solid rgb(255, 0, 242);
+    width: 68%;
+    height: 70vh;
+    right: 0;
+    top:25%;
+    
+}
+
+.cakeCatogary-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(237,237,237,0.6);
+    flex-wrap: wrap;
+    margin: 20px;
+    position: absolute;
+    top: 11%;
+    left: 13%;
+}
+
+.cakeCatogary-filter li{
+    margin: 10px;
+    padding: 5px 20px;
+    color: #9b9b9b;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cakeCatogary-filter-active{
+    border-bottom: 1px solid red;
+    color: #272727;
+    /* width: 19px; */
+    /* text-align: center; */
+    
+}
+
+.cake-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    position: absolute;
+    left:2%;
+    top: 22%;
+    height: 79%;
+}
+
+.cake-box{
+    width: 234px;
+    padding: 15px;
+    border: 1px solid #070606;
+    margin: 20px;
+    height: 40%;
+
+}
+
+.cake-box img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
 }
