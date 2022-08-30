@@ -288,7 +288,7 @@ export default function HomePage() {
         </div>
 
         <div className="thirdPageParagraph">
-        <p style={{ position: "relative", textAlign: "center",margin:"2px", top: "14%", color: "black", fontSize: "16px" }}>
+        <p style={{ position: "relative", textAlign: "center",margin:"2px", top: "14%", color: "black", fontSize: "16px" ,lineHeight:"30px"}}>
           We specialize in selling cakes, Cuspcakes and Cookies to order, but we alsohave two <br/>
           cozy cafes. In them you can not only try some of the best cakes in our city. You can <br/>
           have a wonderful time with the whole family. We allow people to order individule <br/>
@@ -332,6 +332,39 @@ export default function HomePage() {
 </div>
 
 </section>
+
+
+
+
+
+
+{/* --------------five page ---------------------------------*/}
+
+<section className="fivePage">
+    <div className="fivePageRectangle">
+    <h6 style={{ position: "relative", textAlign: "center",margin:"auto", top: "-5%", color: "black", fontSize: "30px", fontFamily: "Meow Script, cursive;" }}> //</h6>
+
+    <p style={{ position: "relative", textAlign: "center",margin:"auto",lineHeight:"30px", top: "10%", black: "white", fontSize: "15px" }}>
+              Wonderful bakery. It's always nice nice to sit in their cafe <br/>
+              with a Cup of tea and a piece of my favorite cake. I <br/> 
+              love Snickers filling. When it is not possible to come <br/>
+              to the cafe. I always use delivery. Cake bakeries <br/>
+              always work quickly. Thanks.
+            </p>
+
+            <h6 style={{ position: "relative", textAlign: "center",margin:"auto", top: "20%", color: "#a00412", fontSize: "25px", fontFamily: "Meow Script, cursive;" }}> Prabhashwaree</h6>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+{/* --------------six page ---------------------------------*/}
+
 
     </>
   );
