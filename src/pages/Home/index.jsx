@@ -23,6 +23,8 @@ import cake4 from '../../assets/img/cake4.jpg';
 import cake5 from '../../assets/img/cake5.jpg';
 import cake6 from '../../assets/img/cake6.webp';
 
+import bery from '../../assets/img/bery1.webp';
+
 import $ from 'jquery';
 
 
@@ -310,21 +312,23 @@ export default function HomePage() {
 <div className="forthPageDiscription">
   <div className="forthPageDiscriptionRectangle">
 
-  <h6 className="delicious" style={{ position: "relative", textAlign: "center",margin:"auto", top: "12%", color: "black", fontSize: "40px", fontFamily: "Meow Script, cursive;" }}> Filling</h6>
-            <p style={{ position: "relative", textAlign: "center",margin:"auto", top: "20%", color: "black", fontSize: "15px" }}>
+  <h6 className="delicious" style={{ position: "relative", textAlign: "center",margin:"auto", top: "15%", color: "white", fontSize: "40px", fontFamily: "Meow Script, cursive;" }}> Filling</h6>
+            <p style={{ position: "relative", textAlign: "center",margin:"auto", top: "24%", color: "white", fontSize: "15px" }}>
               When you buy three cake of 1 kilogram <br/>
               or two cakes of 1.5 kilogram, you get a <br/>
               kilogram cake as a gift.
             </p>
 
-            <Button variant="outlined" style={{ position: "absolute",left:"25%", top: "55%", cursor: "pointer", border: "1px solid black", color: "white", width: "13vw" }}>To Order</Button>
+            <Button variant="outlined" style={{ position: "absolute",left:"25%", top: "72%", cursor: "pointer", border: "1px solid white", color: "white", width: "13vw" }}>To Order</Button>
 
   </div>
 </div>
 
 
 <div className="forthPageimage">
-  <div className="forthPageimageRectangle"></div>
+  <div className="forthPageimageRectangle">
+  <img src={bery} alt="" />
+  </div>
 </div>
 
 </section>
