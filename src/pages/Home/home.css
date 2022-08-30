@@ -208,3 +208,51 @@ p{
     font-family: 'Birthstone Bounce', cursive;
     font-weight: 2;
 }
+
+
+
+
+/* ----------------------forth page------------- */
+
+.forthPage{
+    position: absolute;
+    top:270%;
+    border: 1px solid red;
+    width: 100%;
+    height: 70vh;
+}
+
+.forthPageDiscription{
+    position: absolute;
+    top:0;
+    border: 1px solid rgb(15, 196, 30);
+    width: 37%;
+    height: 75vh;
+}
+
+.forthPageimage{
+    position: absolute;
+    top:0;
+    right:0;
+    border: 1px solid rgb(62, 20, 179);
+    width: 63%;
+    height: 75vh;
+}
+
+.forthPageDiscriptionRectangle{
+    position: absolute;
+    top:0;
+    right: 0;
+    border: 1px solid rgb(196, 103, 15);
+    width: 67%;
+    height: 75vh;
+}
+
+.forthPageimageRectangle{
+    position: absolute;
+    top:0;
+    left:28px;
+    border: 1px solid rgb(62, 20, 179);
+    width: 78%;
+    height: 75vh;
+}

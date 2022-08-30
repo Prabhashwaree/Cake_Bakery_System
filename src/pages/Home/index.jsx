@@ -300,6 +300,35 @@ export default function HomePage() {
       </section>
 
 
+
+
+
+      {/* --------------Forth page ---------------------------------*/}
+
+<section className="forthPage">
+
+<div className="forthPageDiscription">
+  <div className="forthPageDiscriptionRectangle">
+
+  <h6 className="delicious" style={{ position: "relative", textAlign: "center",margin:"auto", top: "12%", color: "black", fontSize: "40px", fontFamily: "Meow Script, cursive;" }}> Filling</h6>
+            <p style={{ position: "relative", textAlign: "center",margin:"auto", top: "20%", color: "black", fontSize: "15px" }}>
+              When you buy three cake of 1 kilogram <br/>
+              or two cakes of 1.5 kilogram, you get a <br/>
+              kilogram cake as a gift.
+            </p>
+
+            <Button variant="outlined" style={{ position: "absolute",left:"25%", top: "55%", cursor: "pointer", border: "1px solid black", color: "white", width: "13vw" }}>To Order</Button>
+
+  </div>
+</div>
+
+
+<div className="forthPageimage">
+  <div className="forthPageimageRectangle"></div>
+</div>
+
+</section>
+
     </>
   );
 }
