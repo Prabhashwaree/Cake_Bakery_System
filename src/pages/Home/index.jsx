@@ -50,20 +50,20 @@ $(document).on('click', '.cakeCatogary-filter li', function () {
   $(this).addClass('cakeCatogary-filter-active').siblings().removeClass('cakeCatogary-filter-active')
 })
 
-$(document).ready(function(){
-  $('.list').click(function(){
-      const val =$(this).attr('data-filter');
-      if(val =='all'){
-          $('.cake-box').show('1000');
-      }else{
-          $('.cake-box').not('.'+val).hide('1000');
-          $('.cake-box').filter('.'+val).show('1000');                    
-      }
+$(document).ready(function () {
+  $('.list').click(function () {
+    const val = $(this).attr('data-filter');
+    if (val == 'all') {
+      $('.cake-box').show('1000');
+    } else {
+      $('.cake-box').not('.' + val).hide('1000');
+      $('.cake-box').filter('.' + val).show('1000');
+    }
   })
 })
 
 export default function HomePage() {
- 
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -104,9 +104,9 @@ export default function HomePage() {
       <div>
         <img src={mainPic} style={{ width: "100%", height: "90vh" }} />
         {/* <img src={caketoOrder} style={{width:"30%",height:"20vh",opacity:"0.5",position:"absolute",left:"20px"}} /> */}
-        <h6 className="delicious" style={{ position: "absolute", left: "20px", top: "25%", color: "gray", cursor: "pointer", fontSize: "80px", fontFamily: "Meow Script, cursive;" }}> Delicious Cake</h6>
-        <h6 className="delicious" style={{ position: "absolute", left: "7%", top: "37%", color: "gray", cursor: "pointer", fontSize: "80px", fontFamily: "Meow Script, cursive;" }}> to Order</h6>
-        <Button variant="outlined" style={{ position: "absolute", left: "10%", top: "56%", cursor: "pointer", border: "1px solid #BE6F77", color: "#BE6F77" }}>Coose a Cake</Button>
+        <h6 className="delicious" style={{ position: "absolute", left: "20px", top: "25%", color: "gray", fontSize: "80px", fontFamily: "Meow Script, cursive;" }}> Delicious Cake</h6>
+        <h6 className="delicious" style={{ position: "absolute", left: "7%", top: "37%", color: "gray", fontSize: "80px", fontFamily: "Meow Script, cursive;" }}> to Order</h6>
+        <Button variant="outlined" style={{ position: "absolute", left: "10%", top: "56%", cursor: "pointer", border: "1px solid #a00412", color: "#a00412" }}>Coose a Cake</Button>
       </div>
 
 
@@ -117,32 +117,32 @@ export default function HomePage() {
       <section className="secondPage">
         <div className="cakeDiscription">
           <div className="cakeDiscriptionRectangle">
-          <h6 className="delicious" style={{ position: "absolute", left: "33%", top: "8%", color: "white", cursor: "pointer", fontSize: "40px", fontFamily: "Meow Script, cursive;" }}> Filling</h6>
-          <p style={{ position: "absolute", left: "22%", top: "25%", color: "white", fontSize: "15px"}}>You can choose one of six</p>
-          <p style={{ position: "absolute", left: "26%", top: "30%", color: "white", fontSize: "15px"}}>toppings for the cake</p>
-          
-          <div className="discripCatogary">
-               <p className="listSection">Snicker</p>
-               <p className="listSection">Red Velvet</p>
-               <p className="listSection">Oreo cheese</p>
+            <h6 className="delicious" style={{ position: "absolute", left: "33%", top: "8%", color: "white", fontSize: "40px", fontFamily: "Meow Script, cursive;" }}> Filling</h6>
+            <p style={{ position: "absolute", left: "22%", top: "25%", color: "white", fontSize: "15px" }}>You can choose one of six</p>
+            <p style={{ position: "absolute", left: "26%", top: "30%", color: "white", fontSize: "15px" }}>toppings for the cake</p>
 
-               <p className="listSection">Chery bomb</p>
-               <p className="listSection">Bery</p>
-               <p className="listSection">Bounty</p>
-    
-          </div>
-          
-          <Button variant="outlined" style={{ position: "absolute", left: "18%", top: "85%", cursor: "pointer", border: "1px solid white", color: "white",width:"13vw" }}>To Order</Button>
+            <div className="discripCatogary">
+              <p className="listSection">Snicker</p>
+              <p className="listSection">Red Velvet</p>
+              <p className="listSection">Oreo cheese</p>
+
+              <p className="listSection">Chery bomb</p>
+              <p className="listSection">Bery</p>
+              <p className="listSection">Bounty</p>
+
+            </div>
+
+            <Button variant="outlined" style={{ position: "absolute", left: "18%", top: "85%", cursor: "pointer", border: "1px solid white", color: "white", width: "13vw" }}>To Order</Button>
 
           </div>
         </div>
 
 
         <div className="cakeSection">
-          <h6 className="delicious" style={{ position: "absolute", left: "25%", top: "6%", color: "black", cursor: "pointer", fontSize: "30px", fontFamily: "Meow Script, cursive;" }}> Our category</h6>
+          <h6 className="delicious" style={{ position: "absolute", left: "25%", top: "6%", color: "black", fontSize: "30px", fontFamily: "Meow Script, cursive;"}}> Our category</h6>
 
           <ul class="cakeCatogary-filter">
-            <li class="list cakeCatogary-filter-active" data-filter="all">Cakes</li>
+            <li class="list cakeCatogary-filter-active" data-filter="cake">Cakes</li>
             <li class="list" data-filter="cupcake">Cupcake</li>
             <li class="list" data-filter="cookies">Cookies</li>
           </ul>
@@ -150,44 +150,123 @@ export default function HomePage() {
           {/* <!--  Cake container --> */}
           <div class="cake-container">
 
+
+{/* ------------ Cakes------------------ */}
+
             {/* <!-- 1 (all)--> */}
-            <a href="" class="cake-box app">
+            <a href="" class="cake-box cake">
               <img src={cake1} alt="" />
 
             </a>
 
             {/* <!-- 2 (app)--> */}
-            <a href="" class="cake-box web">
+            <a href="" class="cake-box cake">
               <img src={cake2} alt="" />
 
             </a>
 
             {/* <!-- 3 (desing)--> */}
-            <a href="" class="cake-box ai">
+            <a href="" class="cake-box cake">
               <img src={cake3} alt="" />
 
             </a>
 
             {/* <!-- 4 (web)--> */}
-            <a href="" class="cake-box desing">
+            <a href="" class="cake-box cake">
               <img src={cake4} alt="" />
 
             </a>
 
             {/* <!-- 5 (ai)--> */}
-            <a href="" class="cake-box desing">
+            <a href="" class="cake-box cake">
               <img src={cake5} alt="" />
 
             </a>
 
             {/* <!-- 6 --> */}
-            <a href="" class="cake-box app">
+            <a href="" class="cake-box cake">
               <img src={cake6} alt="" />
 
             </a>
 
 
-           
+
+{/* ------------ cupcake------------------ */}
+            {/* <!-- 1 (all)--> */}
+            <a href="" class="cupCake-box cake-box cupcake">
+              <img src={cake1} alt="" />
+
+            </a>
+
+            {/* <!-- 2 (app)--> */}
+            <a href="" class="cupCake-box cake-box cupcake">
+              <img src={cake2} alt="" />
+
+            </a>
+
+            {/* <!-- 3 (desing)--> */}
+            <a href="" class="cupCake-box cake-box cupcake">
+              <img src={cake3} alt="" />
+
+            </a>
+
+            {/* <!-- 4 (web)--> */}
+            <a href="" class="cupCake-box cake-box cupcake">
+              <img src={cake4} alt="" />
+
+            </a>
+
+            {/* <!-- 5 (ai)--> */}
+            <a href="" class="cupCake-box cake-box cupcake">
+              <img src={cake5} alt="" />
+
+            </a>
+
+            {/* <!-- 6 --> */}
+            <a href="" class="cupCake-box cake-box cupcake">
+              <img src={cake6} alt="" />
+
+            </a>
+
+
+
+            {/* ------------ Cookies------------------ */}
+            {/* <!-- 1 (all)--> */}
+            <a href="" class="cookies-box cake-box cookies">
+              <img src={cake1} alt="" />
+
+            </a>
+
+            {/* <!-- 2 (app)--> */}
+            <a href="" class="cookies-box cake-box cookies">
+              <img src={cake2} alt="" />
+
+            </a>
+
+            {/* <!-- 3 (desing)--> */}
+            <a href="" class="cookies-box cake-box cookies">
+              <img src={cake3} alt="" />
+
+            </a>
+
+            {/* <!-- 4 (web)--> */}
+            <a href="" class="cookies-box cake-box cookies">
+              <img src={cake4} alt="" />
+
+            </a>
+
+            {/* <!-- 5 (ai)--> */}
+            <a href="" class="cookies-box cake-box cookies">
+              <img src={cake5} alt="" />
+
+            </a>
+
+            {/* <!-- 6 --> */}
+            <a href="" class="cookies-box cake-box cookies">
+              <img src={cake6} alt="" />
+
+            </a>
+
 
           </div>
 
@@ -196,7 +275,31 @@ export default function HomePage() {
 
 
 
-     
+
+
+      {/* --------------Third page ---------------------------------*/}
+
+      <section className="thirdPage">
+
+        <div className="thirdPageTopic">
+          <h6 style={{ position: "absolute", left: "25%", top: "-40%", color: "black", fontSize: "30px", fontFamily: "Meow Script, cursive;" }}> About Us</h6>
+        </div>
+
+        <div className="thirdPageParagraph">
+        <p style={{ position: "relative", textAlign: "center",margin:"2px", top: "14%", color: "black", fontSize: "16px" }}>
+          We specialize in selling cakes, Cuspcakes and Cookies to order, but we alsohave two <br/>
+          cozy cafes. In them you can not only try some of the best cakes in our city. You can <br/>
+          have a wonderful time with the whole family. We allow people to order individule <br/>
+          cakes according to their design for any holiday.
+        </p>
+
+        <div style={{width:"18%",border:"0.1px solid #a00412",position: "relative", textAlign: "center",margin:"auto",top:"24%"}}></div>
+        <h6 style={{ position: "relative", textAlign: "center",margin:"auto",top:"34%", color: "#a00412", fontSize: "25px", fontFamily: "Meow Script, cursive;" }}>Cake Bakery</h6>
+        </div>
+
+      </section>
+
+
     </>
   );
 }
