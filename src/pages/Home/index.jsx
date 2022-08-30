@@ -118,8 +118,8 @@ export default function HomePage() {
         <div className="cakeDiscription">
           <div className="cakeDiscriptionRectangle">
           <h6 className="delicious" style={{ position: "absolute", left: "33%", top: "8%", color: "white", cursor: "pointer", fontSize: "40px", fontFamily: "Meow Script, cursive;" }}> Filling</h6>
-          <p style={{ position: "absolute", left: "20%", top: "25%", color: "white", fontSize: "16.3px"}}>You can choose one of six</p>
-          <p style={{ position: "absolute", left: "25%", top: "31%", color: "white", fontSize: "16.3px"}}>toppings for the cake</p>
+          <p style={{ position: "absolute", left: "22%", top: "25%", color: "white", fontSize: "15px"}}>You can choose one of six</p>
+          <p style={{ position: "absolute", left: "26%", top: "30%", color: "white", fontSize: "15px"}}>toppings for the cake</p>
           
           <div className="discripCatogary">
                <p className="listSection">Snicker</p>
@@ -132,7 +132,7 @@ export default function HomePage() {
     
           </div>
           
-          <Button variant="outlined" style={{ position: "absolute", left: "18%", top: "83%", cursor: "pointer", border: "1px solid white", color: "white",width:"13vw" }}>To Order</Button>
+          <Button variant="outlined" style={{ position: "absolute", left: "18%", top: "85%", cursor: "pointer", border: "1px solid white", color: "white",width:"13vw" }}>To Order</Button>
 
           </div>
         </div>

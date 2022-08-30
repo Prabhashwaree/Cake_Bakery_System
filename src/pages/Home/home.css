@@ -12,7 +12,7 @@ ul{
 
 .appBar{
     background-color: #eaeaea;
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 50px;
     
 }
 .delicious{
@@ -25,21 +25,21 @@ ul{
 .secondPage{
     position: absolute;
     top: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 97vh;
 }
 
 .cakeDiscription{
     position: absolute;
-    border: 1px solid rgb(0, 47, 255);
+    /* border: 1px solid rgb(0, 47, 255); */
     width: 30%;
     height: 97vh;
 }
 
 .cakeSection{
     position: absolute;
-    border: 1px solid rgb(34, 236, 135);
+    /* border: 1px solid rgb(34, 236, 135); */
     width: 70%;
     height: 97vh;
     right:0;
@@ -53,6 +53,8 @@ ul{
     right: 0;
     top:25%;
     background-color: #a00412;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     
 }
 
@@ -60,7 +62,8 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(237,237,237,0.6);
+    /* border-bottom: 1px solid rgba(237,237,237,0.6);
+    border-top: 1px solid rgba(237,237,237,0.6); */
     flex-wrap: wrap;
     margin: 20px;
     position: absolute;
@@ -124,10 +127,12 @@ ul{
     margin:auto;
     position: absolute;
     left:34%;
-    top: 43%;
+    top: 41%;
     /* height: 79%; */
     text-align: center;
     color: white;
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 15px;
 }
 
 .listSection{
@@ -135,4 +140,8 @@ ul{
     margin: -10px;
     text-align: center;
     
+}
+
+p{
+    font-family: 'Anek Telugu', sans-serif;
 }
