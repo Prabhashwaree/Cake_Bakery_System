@@ -26,6 +26,8 @@ import cake6 from '../../assets/img/cake6.webp';
 import bery from '../../assets/img/bery1.webp';
 import bakery from '../../assets/img/bakery.jpg';
 
+import TextField from '@mui/material/TextField';
+
 import $ from 'jquery';
 
 
@@ -375,31 +377,63 @@ export default function HomePage() {
             <h6 className="delicious" style={{ position: "relative", textAlign: "center", margin: "auto", top: "12%", color: "white", fontSize: "29px", fontFamily: "Meow Script, cursive;" }}> Our Contacts</h6>
 
             <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "21%", color: "white", fontSize: "15px" }}>
-              Phone :  +94 774 914 870 <br/>
-               E-mail :  prabhashwaree57@gmail.com <br/>
-               Address :  698/8, Marconi Road,<br/> 
-               Wadduwa Panadura <br/>
-               --------- <br/>
-               351/6, Howard Street, <br/>
-               Rawaththa Moratuwa
-               </p>
-            {/* <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>E-mail :  prabhashwaree57@gmail.com</p>
-            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>Address :  698/8, Marconi Road, </p>
-            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>Wadduwa Panadura</p>
-            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>---------</p>
-            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>351/6, Howard Street,</p>
-            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>Rawaththa Moratuwa</p> */}
+              Phone :  +94 774 914 870 <br />
+              E-mail :  prabhashwaree57@gmail.com <br />
+              Address :  698/8, Marconi Road,<br />
+              Wadduwa Panadura <br />
+              --------- <br />
+              351/6, Howard Street, <br />
+              Rawaththa Moratuwa
+            </p>
 
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      {/* --------------seven page ---------------------------------*/}
+
+      <section className="applicationSection">
+        <div className="applicationSectionRectangle">
+
+          <h6 className="delicious" style={{ position: "relative", textAlign: "center", margin: "auto", top: "1%", color: "black", fontSize: "29px", fontFamily: "Meow Script, cursive;" }}> Application</h6>
+
+          <div className="FirstTrxtFeildRectangle">
+            <div className="FirstTrxtFeildRectangle1">
+              <TextField className="textfeildStyle" placeholder="Your name" error variant="standard" color="warning" focused /><br />
+            </div>
+
+            <div className="FirstTrxtFeildRectangle2">
+              <TextField className="textfeildStyle" placeholder="Phone" error variant="standard" color="warning" focused />
+
+            </div>
 
           </div>
 
 
+          <div className="SecondTrxtFeildRectangle">
+          <div className="SecondTrxtFeildRectangle1">
+              <TextField className="textfeildStyle" placeholder="Your surname" error variant="standard" color="warning" focused /><br />
+            </div>
+
+            <div className="SecondTrxtFeildRectangle2">
+              <TextField className="textfeildStyle" placeholder="E-mail" error variant="standard" color="warning" focused />
+
+            </div>
+
+          </div>
+
+          <Button variant="outlined" style={{ position: "relative", textAlign: "center", margin: "auto",backgroundColor:"#a00412", top: "55%", cursor: "pointer", border: "1px solid white", color: "white", width: "13vw" }}>Send</Button>
 
         </div>
 
 
-
       </section>
+
+
 
     </>
   );
