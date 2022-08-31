@@ -25,6 +25,7 @@ import cake6 from '../../assets/img/cake6.webp';
 
 import bery from '../../assets/img/bery1.webp';
 import bakery from '../../assets/img/bakery.jpg';
+import flogo from '../../assets/img/flogo.PNG';
 
 import TextField from '@mui/material/TextField';
 
@@ -430,7 +431,26 @@ export default function HomePage() {
 
         </div>
 
+      </section>
 
+
+
+      
+
+      {/* ----------------------footer---------------- */}
+
+      <section className="footer">
+      <img src={flogo} alt="" style={{ position: "absolute",top:"10px",left:"8%"}}/>
+
+<div className="footerLinks">
+      <a><Typography variant="subtitle1" gutterBottom style={{ position: "absolute", left: "24%", top: "20px", color: "white", cursor: "pointer", fontSize: "14px" }}> Main</Typography></a>
+            <a><Typography variant="subtitle1" gutterBottom style={{ position: "absolute", left: "29%", top: "20px", color: "white", cursor: "pointer", fontSize: "14px" }}> Catalog</Typography></a>
+            <a><Typography variant="subtitle1" gutterBottom style={{ position: "absolute", left: "35.4%", top: "20px", color: "white", cursor: "pointer", fontSize: "14px" }}> About Us</Typography></a>
+            <a><Typography variant="subtitle1" gutterBottom style={{ position: "absolute", left: "42.5%", top: "20px", color: "white", cursor: "pointer", fontSize: "14px" }}> Special Offer</Typography></a>
+            <a><Typography variant="subtitle1" gutterBottom style={{ position: "absolute", left: "52%", top: "20px", color: "white", cursor: "pointer", fontSize: "14px" }}> Reviews</Typography></a>
+            <a><Typography variant="subtitle1" gutterBottom style={{ position: "absolute", left: "59%", top: "20px", color: "white", cursor: "pointer", fontSize: "14px" }}> Contacts</Typography></a>
+
+            </div>
       </section>
 
 
