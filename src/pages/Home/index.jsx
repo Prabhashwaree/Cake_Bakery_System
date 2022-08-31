@@ -24,6 +24,7 @@ import cake5 from '../../assets/img/cake5.jpg';
 import cake6 from '../../assets/img/cake6.webp';
 
 import bery from '../../assets/img/bery1.webp';
+import bakery from '../../assets/img/bakery.jpg';
 
 import $ from 'jquery';
 
@@ -141,7 +142,7 @@ export default function HomePage() {
 
 
         <div className="cakeSection">
-          <h6 className="delicious" style={{ position: "absolute", left: "25%", top: "6%", color: "black", fontSize: "30px", fontFamily: "Meow Script, cursive;"}}> Our category</h6>
+          <h6 className="delicious" style={{ position: "absolute", left: "25%", top: "6%", color: "black", fontSize: "30px", fontFamily: "Meow Script, cursive;" }}> Our category</h6>
 
           <ul class="cakeCatogary-filter">
             <li class="list cakeCatogary-filter-active" data-filter="cake">Cakes</li>
@@ -153,7 +154,7 @@ export default function HomePage() {
           <div class="cake-container">
 
 
-{/* ------------ Cakes------------------ */}
+            {/* ------------ Cakes------------------ */}
 
             {/* <!-- 1 (all)--> */}
             <a href="" class="cake-box cake">
@@ -193,7 +194,7 @@ export default function HomePage() {
 
 
 
-{/* ------------ cupcake------------------ */}
+            {/* ------------ cupcake------------------ */}
             {/* <!-- 1 (all)--> */}
             <a href="" class="cupCake-box cake-box cupcake">
               <img src={cake1} alt="" />
@@ -288,15 +289,15 @@ export default function HomePage() {
         </div>
 
         <div className="thirdPageParagraph">
-        <p style={{ position: "relative", textAlign: "center",margin:"2px", top: "14%", color: "black", fontSize: "16px" ,lineHeight:"30px"}}>
-          We specialize in selling cakes, Cuspcakes and Cookies to order, but we alsohave two <br/>
-          cozy cafes. In them you can not only try some of the best cakes in our city. You can <br/>
-          have a wonderful time with the whole family. We allow people to order individule <br/>
-          cakes according to their design for any holiday.
-        </p>
+          <p style={{ position: "relative", textAlign: "center", margin: "2px", top: "14%", color: "black", fontSize: "16px", lineHeight: "30px" }}>
+            We specialize in selling cakes, Cuspcakes and Cookies to order, but we alsohave two <br />
+            cozy cafes. In them you can not only try some of the best cakes in our city. You can <br />
+            have a wonderful time with the whole family. We allow people to order individule <br />
+            cakes according to their design for any holiday.
+          </p>
 
-        <div style={{width:"18%",border:"0.1px solid #a00412",position: "relative", textAlign: "center",margin:"auto",top:"24%"}}></div>
-        <h6 style={{ position: "relative", textAlign: "center",margin:"auto",top:"34%", color: "#a00412", fontSize: "25px", fontFamily: "Meow Script, cursive;" }}>Cake Bakery</h6>
+          <div style={{ width: "18%", border: "0.1px solid #a00412", position: "relative", textAlign: "center", margin: "auto", top: "24%" }}></div>
+          <h6 style={{ position: "relative", textAlign: "center", margin: "auto", top: "34%", color: "#a00412", fontSize: "25px", fontFamily: "Meow Script, cursive;" }}>Cake Bakery</h6>
         </div>
 
       </section>
@@ -307,64 +308,98 @@ export default function HomePage() {
 
       {/* --------------Forth page ---------------------------------*/}
 
-<section className="forthPage">
+      <section className="forthPage">
 
-<div className="forthPageDiscription">
-  <div className="forthPageDiscriptionRectangle">
+        <div className="forthPageDiscription">
+          <div className="forthPageDiscriptionRectangle">
 
-  <h6 className="delicious" style={{ position: "relative", textAlign: "center",margin:"auto", top: "15%", color: "white", fontSize: "40px", fontFamily: "Meow Script, cursive;" }}> Filling</h6>
-            <p style={{ position: "relative", textAlign: "center",margin:"auto", top: "24%", color: "white", fontSize: "15px" }}>
-              When you buy three cake of 1 kilogram <br/>
-              or two cakes of 1.5 kilogram, you get a <br/>
+            <h6 className="delicious" style={{ position: "relative", textAlign: "center", margin: "auto", top: "15%", color: "white", fontSize: "40px", fontFamily: "Meow Script, cursive;" }}> Filling</h6>
+            <p style={{ position: "relative", textAlign: "center", margin: "auto", top: "24%", color: "white", fontSize: "15px" }}>
+              When you buy three cake of 1 kilogram <br />
+              or two cakes of 1.5 kilogram, you get a <br />
               kilogram cake as a gift.
             </p>
 
-            <Button variant="outlined" style={{ position: "absolute",left:"25%", top: "72%", cursor: "pointer", border: "1px solid white", color: "white", width: "13vw" }}>To Order</Button>
+            <Button variant="outlined" style={{ position: "absolute", left: "25%", top: "72%", cursor: "pointer", border: "1px solid white", color: "white", width: "13vw" }}>To Order</Button>
 
-  </div>
-</div>
-
-
-<div className="forthPageimage">
-  <div className="forthPageimageRectangle">
-  <img src={bery} alt="" />
-  </div>
-</div>
-
-</section>
+          </div>
+        </div>
 
 
+        <div className="forthPageimage">
+          <div className="forthPageimageRectangle">
+            <img src={bery} alt="" />
 
+          </div>
+        </div>
 
-
-
-{/* --------------five page ---------------------------------*/}
-
-<section className="fivePage">
-    <div className="fivePageRectangle">
-    <h6 style={{ position: "relative", textAlign: "center",margin:"auto", top: "-5%", color: "black", fontSize: "30px", fontFamily: "Meow Script, cursive;" }}> //</h6>
-
-    <p style={{ position: "relative", textAlign: "center",margin:"auto",lineHeight:"30px", top: "10%", black: "white", fontSize: "15px" }}>
-              Wonderful bakery. It's always nice nice to sit in their cafe <br/>
-              with a Cup of tea and a piece of my favorite cake. I <br/> 
-              love Snickers filling. When it is not possible to come <br/>
-              to the cafe. I always use delivery. Cake bakeries <br/>
-              always work quickly. Thanks.
-            </p>
-
-            <h6 style={{ position: "relative", textAlign: "center",margin:"auto", top: "20%", color: "#a00412", fontSize: "25px", fontFamily: "Meow Script, cursive;" }}> Prabhashwaree</h6>
-
-    </div>
-
-
-</section>
+      </section>
 
 
 
 
 
-{/* --------------six page ---------------------------------*/}
 
+      {/* --------------five page ---------------------------------*/}
+
+      <section className="fivePage">
+        <div className="fivePageRectangle">
+          <h6 style={{ position: "relative", textAlign: "center", margin: "auto", top: "-5%", color: "black", fontSize: "30px", fontFamily: "Meow Script, cursive;" }}> //</h6>
+
+          <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>
+            Wonderful bakery. It's always nice nice to sit in their cafe <br />
+            with a Cup of tea and a piece of my favorite cake. I <br />
+            love Snickers filling. When it is not possible to come <br />
+            to the cafe. I always use delivery. Cake bakeries <br />
+            always work quickly. Thanks.
+          </p>
+
+          <h6 style={{ position: "relative", textAlign: "center", margin: "auto", top: "20%", color: "#a00412", fontSize: "25px", fontFamily: "Meow Script, cursive;" }}> Prabhashwaree</h6>
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+      {/* --------------six page ---------------------------------*/}
+      <section className="sixPage">
+        <div className="sixPageRectangle">
+          <img src={bakery} alt="" />
+
+          <div className="sixPageDiscriptionRectangle">
+
+            <h6 className="delicious" style={{ position: "relative", textAlign: "center", margin: "auto", top: "12%", color: "white", fontSize: "29px", fontFamily: "Meow Script, cursive;" }}> Our Contacts</h6>
+
+            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "21%", color: "white", fontSize: "15px" }}>
+              Phone :  +94 774 914 870 <br/>
+               E-mail :  prabhashwaree57@gmail.com <br/>
+               Address :  698/8, Marconi Road,<br/> 
+               Wadduwa Panadura <br/>
+               --------- <br/>
+               351/6, Howard Street, <br/>
+               Rawaththa Moratuwa
+               </p>
+            {/* <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>E-mail :  prabhashwaree57@gmail.com</p>
+            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>Address :  698/8, Marconi Road, </p>
+            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>Wadduwa Panadura</p>
+            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>---------</p>
+            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>351/6, Howard Street,</p>
+            <p style={{ position: "relative", textAlign: "center", margin: "auto", lineHeight: "30px", top: "10%", black: "white", fontSize: "15px" }}>Rawaththa Moratuwa</p> */}
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </section>
 
     </>
   );
