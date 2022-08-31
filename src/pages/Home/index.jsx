@@ -23,9 +23,26 @@ import cake4 from '../../assets/img/cake4.jpg';
 import cake5 from '../../assets/img/cake5.jpg';
 import cake6 from '../../assets/img/cake6.webp';
 
+import cupcake1 from '../../assets/img/cupcake1.jpg';
+import cupcake2 from '../../assets/img/cupcake2.webp';
+import cupcake3 from '../../assets/img/cupcake3.jpg';
+import cupcake4 from '../../assets/img/cupcake4.jpg';
+import cupcake5 from '../../assets/img/cupcake5.jpg';
+import cupcake6 from '../../assets/img/cupcake6.webp';
+
+import cookies1 from '../../assets/img/cookies1.jpg';
+import cookies2 from '../../assets/img/cookies2.jpg';
+import cookies3 from '../../assets/img/cookies3.webp';
+import cookies4 from '../../assets/img/cookies4.jpg';
+import cookies5 from '../../assets/img/cookies5.jpg';
+import cookies6 from '../../assets/img/cookies6.jpg';
+
+
 import bery from '../../assets/img/bery1.webp';
 import bakery from '../../assets/img/bakery.jpg';
 import flogo from '../../assets/img/flogo.PNG';
+
+import icon from '../../assets/img/icon.PNG';
 
 import TextField from '@mui/material/TextField';
 
@@ -200,37 +217,37 @@ export default function HomePage() {
             {/* ------------ cupcake------------------ */}
             {/* <!-- 1 (all)--> */}
             <a href="" class="cupCake-box cake-box cupcake">
-              <img src={cake1} alt="" />
+              <img src={cupcake1} alt="" />
 
             </a>
 
             {/* <!-- 2 (app)--> */}
             <a href="" class="cupCake-box cake-box cupcake">
-              <img src={cake2} alt="" />
+              <img src={cupcake2} alt="" />
 
             </a>
 
             {/* <!-- 3 (desing)--> */}
             <a href="" class="cupCake-box cake-box cupcake">
-              <img src={cake3} alt="" />
+              <img src={cupcake3} alt="" />
 
             </a>
 
             {/* <!-- 4 (web)--> */}
             <a href="" class="cupCake-box cake-box cupcake">
-              <img src={cake4} alt="" />
+              <img src={cupcake4} alt="" />
 
             </a>
 
             {/* <!-- 5 (ai)--> */}
             <a href="" class="cupCake-box cake-box cupcake">
-              <img src={cake5} alt="" />
+              <img src={cupcake5} alt="" />
 
             </a>
 
             {/* <!-- 6 --> */}
             <a href="" class="cupCake-box cake-box cupcake">
-              <img src={cake6} alt="" />
+              <img src={cupcake6} alt="" />
 
             </a>
 
@@ -239,37 +256,37 @@ export default function HomePage() {
             {/* ------------ Cookies------------------ */}
             {/* <!-- 1 (all)--> */}
             <a href="" class="cookies-box cake-box cookies">
-              <img src={cake1} alt="" />
+              <img src={cookies1} alt="" />
 
             </a>
 
             {/* <!-- 2 (app)--> */}
             <a href="" class="cookies-box cake-box cookies">
-              <img src={cake2} alt="" />
+              <img src={cookies2} alt="" />
 
             </a>
 
             {/* <!-- 3 (desing)--> */}
             <a href="" class="cookies-box cake-box cookies">
-              <img src={cake3} alt="" />
+              <img src={cookies3} alt="" />
 
             </a>
 
             {/* <!-- 4 (web)--> */}
             <a href="" class="cookies-box cake-box cookies">
-              <img src={cake4} alt="" />
+              <img src={cookies4} alt="" />
 
             </a>
 
             {/* <!-- 5 (ai)--> */}
             <a href="" class="cookies-box cake-box cookies">
-              <img src={cake5} alt="" />
+              <img src={cookies5} alt="" />
 
             </a>
 
             {/* <!-- 6 --> */}
             <a href="" class="cookies-box cake-box cookies">
-              <img src={cake6} alt="" />
+              <img src={cookies6} alt="" />
 
             </a>
 
@@ -449,6 +466,9 @@ export default function HomePage() {
             <a><Typography variant="subtitle1" gutterBottom style={{ position: "absolute", left: "42.5%", top: "20px", color: "white", cursor: "pointer", fontSize: "14px" }}> Special Offer</Typography></a>
             <a><Typography variant="subtitle1" gutterBottom style={{ position: "absolute", left: "52%", top: "20px", color: "white", cursor: "pointer", fontSize: "14px" }}> Reviews</Typography></a>
             <a><Typography variant="subtitle1" gutterBottom style={{ position: "absolute", left: "59%", top: "20px", color: "white", cursor: "pointer", fontSize: "14px" }}> Contacts</Typography></a>
+
+            <img src={icon} alt="" style={{ position: "absolute",top:"20px",right:"8%",width:"6%"}}/>
+
 
             </div>
       </section>
